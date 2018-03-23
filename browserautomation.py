@@ -25,14 +25,14 @@ search.submit()
 driver.find_element_by_xpath('//a[contains(text(), "Login")]').click()
 
 user = driver.find_element_by_name("username")
-user.send_keys("reh.san.rt16@rait.ac.in")
+user.send_keys("")#ur username
 
 driver.find_element_by_name("next").click()
 
 driver.implicitly_wait(5)
 
 passw = driver.find_element_by_name("password")
-passw.send_keys("dypatil@123")
+passw.send_keys("")#ur password
 
 driver.find_element_by_id("loginbtn").click()
 
