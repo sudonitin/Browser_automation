@@ -11,3 +11,6 @@ Requirements:
 just enter the username password in this code and save ample of time :)
 
 NOTE: YOU HAVE TO MENTION THE INDEX NO. OF FIRST SECTION IN THE FOR LOOPS(simply inspect that section and get the href thereby "a.index("the hrf"))", this will be the start of range)
+
+A new script has been added to automate a commit for any repo, i.e. 
+githubBot.py is the file name.
