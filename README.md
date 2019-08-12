@@ -33,3 +33,9 @@ driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), c
 ```
 **2)** Add new buildpacks on heroku, buildpacks are mentioned below
 
+https://github.com/heroku/heroku-buildpack-chromedriver 
+This buildpack allows us to use selenium chromedriver
+
+https://github.com/heroku/heroku-buildpack-google-chrome 
+This buildpack creates a chrome instance to perform the selenium instances
+
