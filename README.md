@@ -21,7 +21,11 @@ githubBot.py is the file name.
 
 ## Steps I took to execute the project
 
-**1)** The below is the configuration you need to do for implementing it on heroku
+**1)** Follow the steps mentioned in this repository and then complete the below steps
+
+https://github.com/globefire/heroku-python-script
+
+**2)** The below is the configuration you need to do for implementing it on heroku(copy paste the below snippet in your code after importing libraries)
 
 ```python
 chrome_options = webdriver.ChromeOptions()
@@ -31,7 +35,7 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_options.add_argument('--no-sandbox')
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
 ```
-**2)** Add new buildpacks on heroku, buildpacks are mentioned below
+**3)** Add new buildpacks on heroku, buildpacks are mentioned below
 
 https://github.com/heroku/heroku-buildpack-chromedriver 
 This buildpack allows us to use selenium chromedriver
@@ -39,3 +43,20 @@ This buildpack allows us to use selenium chromedriver
 https://github.com/heroku/heroku-buildpack-google-chrome 
 This buildpack creates a chrome instance to perform the selenium instances
 
+**4)** Now create environment variables on heroku (this allows to find the webdriver object of chrome) 
+
+The picture below shows how to do it
+
+```
+CHROMEDRIVER_PATH /app/.chromedriver/bin/chromedriver
+GOOGLE_CHROME_BIN /app/.apt/usr/bin/google-chrome
+```
+
+## References
+- https://www.youtube.com/watch?v=Ven-pqwk3ec Running chromedriver on heroku with python selenium
+- Continuously run python script on heroku
+  - https://github.com/globefire/heroku-python-script 
+  - https://stackoverflow.com/questions/39139165/running-simple-python-script-continuously-on-heroku
+- Explicit waits in python
+  - https://selenium-python.readthedocs.io/waits.html
+  
