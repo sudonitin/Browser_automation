@@ -3,9 +3,11 @@ automation with selenium in python
 this is a bot which opens a college website and opens all the lectures, ppt, assignments, etc giving the highest hits.
 Purpose of making this project is, it consumes a lot of time to open all docs just for the sake of formality. 
 
-Requirements:
+# Requirements:
 1)Python 2.>>
+
 2)pip install selenium
+
 3)download the webdriver of ur respective browser, i.e. chrome, firefox, etc.
 
 just enter the username password in this code and save ample of time :)
