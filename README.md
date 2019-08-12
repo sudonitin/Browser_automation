@@ -41,7 +41,7 @@ https://github.com/heroku/heroku-buildpack-chromedriver
 This buildpack allows us to use selenium chromedriver
 
 https://github.com/heroku/heroku-buildpack-google-chrome 
-This buildpack creates a chrome instance to perform the selenium instances
+This buildpack creates a chrome instance to perform the selenium operations
 
 **4)** Now create environment variables on heroku (this allows to find the webdriver object of chrome) 
 
